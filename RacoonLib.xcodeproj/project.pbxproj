@@ -10,6 +10,7 @@
 		EF96E5572239430200533FA0 /* RacoonLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF96E54D2239430200533FA0 /* RacoonLib.framework */; };
 		EF96E55C2239430200533FA0 /* RacoonLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96E55B2239430200533FA0 /* RacoonLibTests.swift */; };
 		EF96E55E2239430200533FA0 /* RacoonLib.h in Headers */ = {isa = PBXBuildFile; fileRef = EF96E5502239430200533FA0 /* RacoonLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF96E5682239430E00533FA0 /* Racoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96E5672239430E00533FA0 /* Racoon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		EF96E5562239430200533FA0 /* RacoonLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RacoonLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF96E55B2239430200533FA0 /* RacoonLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacoonLibTests.swift; sourceTree = "<group>"; };
 		EF96E55D2239430200533FA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF96E5672239430E00533FA0 /* Racoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Racoon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				EF96E5502239430200533FA0 /* RacoonLib.h */,
 				EF96E5512239430200533FA0 /* Info.plist */,
+				EF96E5672239430E00533FA0 /* Racoon.swift */,
 			);
 			path = RacoonLib;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					EF96E54C2239430200533FA0 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					EF96E5552239430200533FA0 = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF96E5682239430E00533FA0 /* Racoon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		EF96E5622239430200533FA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = asd.RacoonLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +372,7 @@
 		EF96E5632239430200533FA0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +397,7 @@
 		EF96E5652239430200533FA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RacoonLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +415,7 @@
 		EF96E5662239430200533FA0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RacoonLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
